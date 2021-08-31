@@ -26,6 +26,7 @@ class Sensei extends Ninja {
         super(name , health, speed , strength )
         this.wisdom = wisdom
     }
+
     speakWisdom(){
         // call the drinkSake() method from the Ninja parent class
         this.drinkSake()
@@ -37,3 +38,5 @@ class Sensei extends Ninja {
 const superSensei = new Sensei("Master Splinter");
 
 console.log(superSensei.speakWisdom());
+
+console.log(superSensei.showStats());
