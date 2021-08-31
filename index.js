@@ -41,3 +41,4 @@ const superSensei = new Sensei("Master Splinter");
 superSensei.speakWisdom();
 
 superSensei.showStats();
+// TIP: if undefined shows up, look at what the method returns
