@@ -20,13 +20,20 @@ class Ninja {
     
 }
 
+// child class inherits from the parent class
 class Sensei extends Ninja {
     constructor(name , health= 200, speed = 10, strength =10,  wisdom=10){
-        super(name , health= 200, speed = 10, strength =10)
+        super(name , health, speed , strength )
+        this.wisdom = wisdom
     }
     speakWisdom(){
+        // call the drinkSake() method from the Ninja parent class
+        this.drinkSake()
         console.log("something wise from the sensei");
     }
 
-
 }
+
+const superSensei = new Sensei("Master Splinter");
+
+console.log(superSensei.speakWisdom());
